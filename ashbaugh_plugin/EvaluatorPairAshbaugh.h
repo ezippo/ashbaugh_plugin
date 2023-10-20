@@ -177,7 +177,7 @@ class EvaluatorPairAshbaugh
         // which evaluates to
         // 4 \varepsilon \sigma^{12} (\frac{4}{3 r_{c}^{9}}) - ...
         // 4 \varepsilon \sigma^{6} (\frac{2}{r_{c}^{3}})
-        Scalar rcut3inv = Scalar(1.0) / pow(rcutsq, 1.5);
+        Scalar rcut3inv = fast::pow(rcutsq, -1.5);
         Scalar rcut9inv = rcut3inv * rcut3inv * rcut3inv;
         return lam * (lj1 * Scalar(4.0) / Scalar(3.0) * rcut9inv - lj2 * Scalar(2.0) * rcut3inv);
         }
@@ -197,7 +197,7 @@ class EvaluatorPairAshbaugh
         // which evaluates to
         // 4 \varepsilon \sigma^{12} (\frac{1}{9 r_{c}^{9}}) - ...
         // 4 \varepsilon \sigma^{6} (\frac{1}{3 r_{c}^{3}})
-        Scalar rcut3inv = Scalar(1.0) / pow(rcutsq, 1.5);
+        Scalar rcut3inv = fast::pow(rcutsq, -1.5);
         Scalar rcut9inv = rcut3inv * rcut3inv * rcut3inv;
         return lam * (lj1 / Scalar(9.0) * rcut9inv - lj2 / Scalar(3.0) * rcut3inv);
         }
