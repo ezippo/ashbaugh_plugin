@@ -66,7 +66,7 @@ class EvaluatorPairAshbaugh
             Scalar sigma_6 = sigma * sigma * sigma * sigma * sigma * sigma;
             lj1 = Scalar(4.0) * epsilon * sigma_6 * sigma_6;
             lj2 = Scalar(4.0) * epsilon * sigma_6;
-            rminsq = 1.12246204831 * sigma;
+            rminsq = 1.2599210499 * sigma * sigma;
             e_shift = epsilon * (Scalar(1.0) - lam);
             }
 
