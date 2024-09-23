@@ -7,13 +7,15 @@ ashbaugh_plugin can be compiled as an **external** component following the stand
 
 Ensure that the hoomd module is on your Python path (or hint to its location using HOOMD_ROOT), and install to an appropriate location:
 
-  cd /path/to/ashbaugh_plugin
-  mkdir build && cd build
-  cmake ..
-  make install
+```
+cd /path/to/ashbaugh_plugin
+mkdir build && cd build
+cmake ..
+make install
 
 You must make sure that your installation location is on your PYTHONPATH, and then ashbaugh_plugin can be imported as usual:
 
+```python
   import hoomd
   import azplugins
 
