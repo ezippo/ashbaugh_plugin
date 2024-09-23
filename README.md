@@ -17,8 +17,8 @@ make install
 You must make sure that your installation location is on your PYTHONPATH, and then ashbaugh_plugin can be imported as usual:
 
 ```
-  import hoomd
-  import azplugins
+import hoomd
+import azplugins
 ```
 
 ## Prerequisites
