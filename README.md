@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15207448.svg)](https://doi.org/10.5281/zenodo.15207448)
+
 # ashbaugh_plugin
 Component (plugin) for HOOMD-blue version 3 with Ashbaugh-Hatch pair potential.
 Currently, it is tested against v3.8.1 of HOOMD-blue
