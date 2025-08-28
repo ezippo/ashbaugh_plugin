@@ -20,7 +20,7 @@ You must make sure that your installation location is on your PYTHONPATH, and th
 
 ```
 import hoomd
-import azplugins
+import ashbaugh_plugin
 ```
 
 ## Prerequisites
